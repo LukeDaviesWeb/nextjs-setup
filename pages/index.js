@@ -1,8 +1,11 @@
+import Head from 'next/head'
+
 import Container from '../components/container'
+import { Banner } from '../components/Banner'
 import HeroProject from '../components/hero-project'
 import Layout from '../components/layout'
+
 import { getAllProjects, getAllArticles, getHomePageContent } from '../lib/api'
-import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 
 export default function Index({ allProjects, allArticles, homePageContent, preview }) {
@@ -10,18 +13,16 @@ export default function Index({ allProjects, allArticles, homePageContent, previ
     const heroArticle = allArticles[0]
     const morePosts = allProjects.slice(1)
 
-    console.log(allProjects);
 
-    console.log('home page content', homePageContent);
     return (
         <>
             <Layout preview={preview}>
                 <Head>
                     <title>Built By Luke</title>
                 </Head>
-                <div>
-                    <h1>banner here</h1>
-                </div>
+
+                <Banner />
+
                 <Container>
                     <div>
                         <h4>{homePageContent[0].intro[0].children[0].text}</h4>

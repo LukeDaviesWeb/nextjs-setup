@@ -26,4 +26,27 @@ export const GlobalStyle = createGlobalStyle`
         color: ${props => theme.colors.white};
     }
 
+    h1, h2, h3,h4,h5,h6{
+        margin: 0;
+    }
+
+    h1{
+        font-size: ${props => theme.fontSizes.banner};
+        line-height: 40px;
+    }
+
+    a{
+        text-decoration: none;
+        color: inherit;
+    }
+
+    ul{
+        margin: 0;
+        padding: 0;
+        li{
+            list-style-type: none;
+            font-weight: 400;
+        }
+    }
+
 `

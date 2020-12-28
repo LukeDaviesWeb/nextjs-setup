@@ -22,10 +22,7 @@ export const theme = {
         paddingMedium: "16px 42px",
     },
     fontSizes: {
-        banner: {
-            size: "7.2rem",
-            lineHeight: "110%",
-        },
+        banner: "4.8rem",
         h1: {
             size: "4.7rem",
             lineHeight: "110%",
