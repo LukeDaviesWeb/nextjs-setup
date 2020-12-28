@@ -1,7 +1,6 @@
 ### TODO
 
 -   banner.js
-    -   replace large png with better svf icon
     -   mobile responsiveness
     -   animation / interactivity
 -   nav.js
