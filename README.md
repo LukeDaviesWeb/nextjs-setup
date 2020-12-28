@@ -55,4 +55,6 @@ The `<Head />` component used here is not the same one from `next/head`. The `<H
 
 The easiest way to deploy your Next.js app is to use the [ZEIT Now Platform](https://zeit.co/import?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
+## Deployment
+
 Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
