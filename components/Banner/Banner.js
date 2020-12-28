@@ -1,12 +1,12 @@
 import Image from 'next/image'
 
 import Container from '../container'
-
+import { BannerIcon } from '../Icons'
 import styled from 'styled-components';
 
 const StyledBanner = styled.div`
     background: ${props => props.theme.colors.blockGrey};
-    padding: 150px 0px;
+    padding: 150px 0px 250px 0;;
     overflow: hidden;
 
     span{
@@ -23,11 +23,12 @@ const StyledBanner = styled.div`
 
         &__icon-wrap{
             display: flex;
-            transform: scale(1.9);
+            transform: scale(1.3);
             filter: grayscale(0.95);
             transform-origin: top left;
-            position: relative;
-            
+            position: absolute;
+            top: -10px;
+            right: 165px;
         }
 
     }
@@ -48,13 +49,7 @@ export const Banner = () => {
                     </div>
 
                     <div className="banner__icon-wrap">
-                        <Image
-                            src="/code-icon.png"
-                            alt="Picture of the author"
-                            className="banner__icon-image"
-                            width={300}
-                            height={300}
-                        />
+                        <BannerIcon />
                     </div>
                 </div>
 
