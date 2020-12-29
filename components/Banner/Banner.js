@@ -9,8 +9,16 @@ const StyledBanner = styled.div`
     padding: 150px 0px 250px 0;
     overflow: hidden;
 
+    h1{
+        color: ${props => props.theme.colors.white};
+        font-size: ${props => props.theme.fontSizes.massive};
+        line-height: 6rem;
+        position: relative;
+        z-index: 1;
+    }
     span{
         color: ${props => props.theme.colors.red};
+        font-size: ${props => props.theme.fontSizes.banner};
     }
 
     .banner{
@@ -42,6 +50,7 @@ export const Banner = () => {
                 <div className="banner__flex-row">
                     <div>
                         <h1>Built By</h1>
+                        {/* <h1>Created with</h1> */}
                         <h1>
                             <span>
                                 Luke

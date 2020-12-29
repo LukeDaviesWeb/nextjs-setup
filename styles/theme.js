@@ -22,6 +22,7 @@ export const theme = {
         paddingMedium: "16px 42px",
     },
     fontSizes: {
+        massive: "9rem",
         banner: "4.8rem",
         h1: "3.2rem",
         h2: "2.8rem",

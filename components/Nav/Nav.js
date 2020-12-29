@@ -9,9 +9,14 @@ export const Nav = () => {
         <StyledNav>
             <Container>
                 <div className="nav__flex-row">
-                    <h2>
-                        BBL
-                </h2>
+                    <Link href="/">
+                        <a>
+                            <h2>
+                                BBL
+                            </h2>
+                        </a>
+                    </Link>
+
                     <nav>
                         <ul>
                             <li>
