@@ -7,7 +7,7 @@ export const BannerIcon = () => {
             <circle cx="120.332" cy="42.22" r="17.259" fill="#282729" data-original="#fcc63d" class="" />
             <g >
                 <circle cx="178.434" cy="42.22" r="17.259" fill="#ffffff" data-original="#45b8c4" class="" />
-                <circle cx="403.836" cy="158.549" r="99.328" fill="#ffffff" data-original="#45b8c4" class="" />
+                <circle className="bannerIcon__tick" cx="403.836" cy="158.549" r="99.328" fill="#444444" data-original="#45b8c4" class="" />
             </g>
             <path d="M265.857,155.525H91.778c-4.332,0-7.842-3.511-7.842-7.842c0-4.331,3.51-7.842,7.842-7.842h174.078  c4.332,0,7.842,3.511,7.842,7.842C273.697,152.014,270.187,155.525,265.857,155.525z" fill="#282729" data-original="#fcc63d" class="" />
             <path d="M56.759,155.52c-7.185,0-10.584-9.333-4.979-13.897c5.543-4.514,14.119,0.481,12.665,7.592  C63.705,152.835,60.46,155.52,56.759,155.52z" fill="#020202" data-original="#ffffff" class="" />

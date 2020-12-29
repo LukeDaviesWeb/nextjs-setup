@@ -6,7 +6,7 @@ import styled from 'styled-components';
 
 const StyledBanner = styled.div`
     background: ${props => props.theme.colors.blockGrey};
-    padding: 150px 0px 250px 0;;
+    padding: 150px 0px 250px 0;
     overflow: hidden;
 
     span{
@@ -29,6 +29,7 @@ const StyledBanner = styled.div`
             position: absolute;
             top: -10px;
             right: 165px;
+            opacity: 0.3;
         }
 
     }

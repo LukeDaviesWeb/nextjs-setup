@@ -4,7 +4,7 @@ export const theme = {
     colors: {
         white: 'rgb(255,255,255)',
         grey: 'rgb(2,2,2)',
-        black: 'rgb(8,8,11)',
+        black: 'rgb(7,7,11)',
         blockGrey: 'rgb(13,13,15)',
         lightGrey: 'rgb(18,18,20)',
         blue: 'rgb(42,93,250)',
@@ -23,50 +23,14 @@ export const theme = {
     },
     fontSizes: {
         banner: "4.8rem",
-        h1: {
-            size: "4.7rem",
-            lineHeight: "110%",
-        },
-        h2: {
-            size: "2.9rem",
-            lineHeight: "2.9rem",
-        },
-        h3: {
-            size: "2.3rem",
-            lineHeight: "120%",
-        },
-        h4: {
-            size: "1.9rem",
-            lineHeight: "106%",
-        },
-        h5: {
-            size: "1.6rem",
-            lineHeight: "2.8rem",
-        },
-        lead: {
-            size: "2.3rem",
-            lineHeight: "143.5%",
-        },
-        label: {
-            size: "1.2rem",
-            lineHeight: "1.2rem",
-        },
-        body: {
-            size: "1.6rem",
-            lineHeight: "143.5%",
-        },
-        small: {
-            size: "1.4rem",
-            lineHeight: "1.4rem",
-        },
-        link: {
-            size: "1.6rem",
-            lineHeight: "2.4rem",
-        },
-        tiny: {
-            size: "1.2rem",
-            lineHeight: "1.2rem",
-        },
+        h1: "3.2rem",
+        h2: "2.8rem",
+        h3: "2.4rem",
+
+        lead: "1.8rem",
+        body: "1.5rem",
+        label: "1.1rem",
+        small: "1.3rem",
     },
     space: {
         xxs: "0.5rem", //5px
