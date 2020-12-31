@@ -24,6 +24,11 @@ const StyledTextInput = styled.div`
         border-radius: 15px;
         border: none;
         font-weight: 600;
+        outline:none;
+
+        &:focus{
+            outline: none;
+        }
     }
 
     .error{
@@ -34,7 +39,7 @@ const StyledTextInput = styled.div`
 `
 export const Text = (props) => {
     const [field, meta] = useField(props);
-    console.log(meta);
+
     return (
         <StyledTextInput>
             <label className={meta.touched || meta.value !== '' ? "touched" : undefined} htmlFor={props.id || props.name}>{props.label}</label>

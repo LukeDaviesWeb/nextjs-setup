@@ -5,22 +5,21 @@ import { Banner } from '../components/Banner'
 import Layout from '../components/layout'
 
 import { getAllProjects } from '../lib/api'
-import { CMS_NAME } from '../lib/constants'
 
-export default function Projects({ preview }) {
+export default function Experience({ preview }) {
 
     return (
         <>
             <Layout preview={preview}>
                 <Head>
-                    <title>Built By Luke | Projects</title>
+                    <title>Built By Luke | Experience</title>
                 </Head>
 
-                <Banner title="Projects By" inner={true} />
+                <Banner title="Experience By" inner={true} />
 
                 <Container>
                     <div>
-                        <h2>projects go here</h2>
+                        <h2>experience go here</h2>
                     </div>
 
                 </Container>

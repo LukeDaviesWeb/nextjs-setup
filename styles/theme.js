@@ -12,7 +12,7 @@ export const theme = {
         btnGrey: 'rgb(40,39,41)'
     },
     fonts: {
-        body: "'Arimo', sans-serif;",
+        body: "'Roboto', sans-serif;",
     },
     sizes: {
         maxWidth: "1200px"

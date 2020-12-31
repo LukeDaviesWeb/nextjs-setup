@@ -55,16 +55,27 @@ export const GlobalStyle = createGlobalStyle`
         border-radius: 50px;
         font-weight:600;
         cursor: pointer;
+        background: ${props => theme.colors.btnGrey};
+        color: ${props => theme.colors.white};
+
+        &:hover{
+            background: rgba(255,255,255, 0.15);
+        }
 
         &--sm{
+            height: 38px;
+            width: 150px;
+            font-size: 1.5rem;
+        }
+        &--lg{
             height: 48px;
             width: 200px;
             font-size: 1.5rem;
-            
         }
+        
         &--submit{
             background: ${props => theme.colors.blue};
-
+            color: ${props => theme.colors.white};
             &:hover{
                 background: ${props => theme.colors.white};
                 color: ${props => theme.colors.black};

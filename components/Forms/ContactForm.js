@@ -36,7 +36,7 @@ export const ContactForm = () => {
     })
 
     return (
-        <StyledForm>
+        <StyledForm id="contact">
             <Formik
                 initialValues={{ name: '', email: '', subject: '', message: '' }}
                 validationSchema={validation}
@@ -86,7 +86,7 @@ export const ContactForm = () => {
 
 
 
-                        <button type="submit" className="btn btn--submit btn--sm" disabled={isSubmitting}>
+                        <button type="submit" className="btn btn--submit btn--lg" disabled={isSubmitting}>
                             Submit
                         </button>
                     </Form>

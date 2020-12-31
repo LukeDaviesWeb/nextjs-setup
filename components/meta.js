@@ -38,7 +38,8 @@ export default function Meta() {
             />
             <meta property="og:image" content={HOME_OG_IMAGE_URL} />
             <link rel="preconnect" href="https://fonts.gstatic.com" />
-            <link href="https://fonts.googleapis.com/css2?family=Arimo:wght@400;600&display=swap" rel="stylesheet" />
+            <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;600&display=swap" rel="stylesheet" />
+            <link rel="stylesheet" type="text/css" href="/nprogress.css" />
         </Head>
     )
 }

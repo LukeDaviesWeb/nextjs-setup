@@ -6,7 +6,6 @@ export default function Header() {
             <Link href="/">
                 <a>Blog</a>
             </Link>
-      .
         </h2>
     )
 }
