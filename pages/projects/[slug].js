@@ -1,4 +1,5 @@
 import { useRouter } from 'next/router'
+import Link from 'next/link'
 import ErrorPage from 'next/error'
 import Head from 'next/head'
 
@@ -20,14 +21,29 @@ export default function Project({ project, moreProjects, preview }) {
     return (
         <Layout preview={preview}>
             <Head>
-                <title>{project.title} | Built By Luke</title>
+                <title>Built By Luke | Project | {project.title}</title>
                 {/* <meta property="og:image" content={post.ogImage.url} /> */}
             </Head>
 
             <Banner title={project.title} noSub={true} inner={true} project={true} />
 
             <Container>
-                <p>single project page {project.title}</p>
+                <h2>Single Project Page</h2>
+                <p>title: {project.title}</p>
+                <p>url: {project.url}</p>
+                <p>slug: {project.slug}</p>
+                <p>technologies: {project.technologies.map(tech => (<span>{tech},</span>))}</p>
+                <p>body: {project.body}</p>
+                <p>testimonial: {project.testimonial}</p>
+                <p>testimonial Author: {project.testimonialAuthor}</p>
+                <img height={500} src={project.mainImage} alt="project image" />
+                <br />
+                <br />
+                <br />
+                <p>next project:  {moreProjects[0].title}</p>
+                <Link href={`/projects/${moreProjects[0].slug}`}>
+                    <a>{moreProjects[0].title}</a>
+                </Link>
             </Container>
         </Layout>
     )
