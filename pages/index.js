@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Link from 'next/link'
 
 import Container from '../components/container'
 import { Banner } from '../components/Banner'
@@ -40,18 +41,30 @@ export default function Index({ allProjects, allArticles, homePageContent, previ
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum lorem nec risus dignissim ultrices. Nam feugiat velit mattis dignissim congue. Sed efficitur, nunc feugiat tincidunt molestie, augue turpis lacinia leo, et elementum nisl nibh sed mi.</p>
                     </TextContent>
 
-                    <CardRow projects={allProjects} />
+                    <CardRow projects={allProjects.slice(0, 3)} />
 
-                    <TextContent className="mt-lg" position="left">
-                        <h2 className="h1">Latest Project - Peddle Perth</h2>
+                    <TextContent position="left" icon="binary">
+                        <h2 className="h1">Experience</h2>
 
-                        <p className="lead">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus elementum lorem nec risus dignissim ultrices. Nam feugiat velit mattis dignissim congue. Sed efficitur, nunc feugiat tincidunt molestie, augue turpis lacinia leo, et elementum nisl nibh sed mi.</p>
+                        <p className="lead">Luke has over 3 years professional experience coding websites and web apps.</p>
 
                         <ul className="bullet-list">
-                            <li>mi ornare pellentesque</li>
-                            <li>Aenean ultricies quis nisl ut volutpat.</li>
-                            <li>consectetur adipiscing elit</li>
+                            <li>2017 --- 2018 | 1.5 year | Freelance Web developer </li>
+                            <li>2018 --- 2019 | 1 year | Front End Web developer at OKMG</li>
+                            <li>2019 --- Now  | 1.5 year | Web developer at Juicebox Creative</li>
                         </ul>
+
+                        <div className="border-split">
+                            <h4>React + NextJS</h4>
+                            <p className="mt-5">Luke has experience in building web apps in React, check out the <Link href="/projects?category=react"><a className="text-link">React section of the projects page</a></Link> for more information.</p>
+                            <p>This site has been built using Next.js : <a className="text-link" href="#">specs here</a></p>
+
+                            <h4>Wordpress</h4>
+                            <p className="mt-5">Luke is highly proficient in building custom Wordpress templates to match specific needs of the client to a pixel perfect level.</p>
+
+
+                        </div>
+
                     </TextContent>
 
 

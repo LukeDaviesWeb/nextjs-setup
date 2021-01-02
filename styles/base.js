@@ -53,12 +53,51 @@ export const GlobalStyle = createGlobalStyle`
         font-size: ${props => theme.fontSizes.body};
     }
 
+    .border-split{
+        padding-top: 30px;
+        margin-top: 20px;
+        border-top: 1px solid ${props => theme.colors.btnGrey};
+    }
+
+    .mt-5{
+        margin-top: 5px;
+    }
+    .mt-40{
+        margin-top: 40px;
+    }
+
 
     .lead, span.lead{
         font-size: ${props => theme.fontSizes.lead};
         line-height: 2.2rem;
     }
 
+    span.highlight{
+        background: rgba(42,93,250, 0.8);
+        padding: 0 10px;
+        transform: skew(-1deg);
+        display: inline-block;
+        position: relative;
+
+        &:before{
+            content:'';
+            position: absolute;
+            height: 100%;
+            width: 100%;
+            transform: scaleX(1);
+            transform-origin: right;
+            left: 0;
+            background: ${props => theme.colors.blockGrey};
+            transition: transform .3s ease-out 2s;
+            will-change: transform;
+        }
+
+        &.active{
+            &:before{
+                transform: scaleX(0);
+            }
+        }
+    }
     .small{
         font-size: ${props => theme.fontSizes.small};
     }
@@ -73,9 +112,9 @@ export const GlobalStyle = createGlobalStyle`
     }
 
     a.text-link{
-        &:hover{
+        
             color: ${props => theme.colors.blue};
-        }
+        
     }
 
     ul{

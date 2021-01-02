@@ -91,7 +91,7 @@ export default function Footer() {
 
                     </div>
                     <div className="footer__copyright">
-                        <p className="label">copyright 2021 - Built By Luke</p>
+                        <p className="label">Copyright 2021 - Built By Luke</p>
                     </div>
                 </div>
 

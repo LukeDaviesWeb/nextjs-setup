@@ -3,6 +3,7 @@ import styled from 'styled-components'
 export const StyledTextContent = styled.div`
     display: flex;
     flex-direction: row-reverse;
+    flex-direction: ${props => props.position === 'right' ? 'row-reverse' : 'row'};
     margin-top: 100px;
     .textContent{
         &__text{
@@ -19,8 +20,9 @@ export const StyledTextContent = styled.div`
         &__icon{
             position: relative;
             svg{
-                top: -50px;
-                left: -100px;
+                top: 0px;
+                left:${props => props.position === 'right' ? '-100px' : ''};
+                right:${props => props.position === 'left' ? '-100px' : ''};
                 position: absolute;
                 height: 440px;
             }

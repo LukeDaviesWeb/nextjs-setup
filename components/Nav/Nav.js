@@ -31,10 +31,6 @@ const links = [
         url: '/experience'
     },
     {
-        name: 'Work',
-        url: '/work'
-    },
-    {
         name: 'Contact',
         url: '/#contact'
     },

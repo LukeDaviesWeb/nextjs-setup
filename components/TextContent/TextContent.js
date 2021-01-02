@@ -1,5 +1,5 @@
 import styled from 'styled-components'
-import { Code } from '../Icons'
+import { Code, BinaryCode } from '../Icons'
 import { motion } from "framer-motion"
 import { StyledTextContent } from './styled'
 
@@ -8,6 +8,8 @@ const TextContentIcon = ({ icon, fill }) => {
     switch (icon) {
         case 'code':
             return <Code fill={fill} />
+        case 'binary':
+            return <BinaryCode fill={fill} />
         default:
             return <div></div>
     }
@@ -33,7 +35,7 @@ export const TextContent = ({ position, icon, className, children }) => {
                     variants={variants}
                     transition={{ repeat: Infinity, ease: "easeOut", type: "tween", duration: 3, repeatType: "reverse" }}
                 >
-                    <TextContentIcon icon={icon} fill="rgba(7,7,11, 0.4)" />
+                    <TextContentIcon icon={icon} fill="rgba(7,7,11, 0.8)" />
                 </motion.div>
             )}
 

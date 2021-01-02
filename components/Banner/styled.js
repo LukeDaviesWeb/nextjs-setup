@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const StyledBanner = styled.div`
 background: ${props => props.theme.colors.blockGrey};
-padding: ${props => props.inner ? '50px 0px 100px 0px' : '150px 0px 200px 0'};
+padding: ${props => props.inner ? '50px 0px 100px 0px' : '100px 0px 100px 0'};
 overflow: hidden;
 
 h1{
@@ -48,9 +48,8 @@ h1{
     }
 
     &__subheader{
-        margin-top: 40px;
+        margin-top: 20px;
         max-width: 40%;
-       
     }
 
 }
