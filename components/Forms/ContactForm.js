@@ -1,10 +1,12 @@
 import { useState } from 'react'
 import * as Yup from 'yup';
 import { Formik, Form } from 'formik';
+import { motion } from 'framer-motion'
 import { Text } from '../Inputs/Text'
 import emailjs from 'emailjs-com';
 import styled from 'styled-components'
 import { Check } from '../Icons'
+
 
 const StyledForm = styled.div`
     padding: 15px 0px  35px 0;
@@ -145,11 +147,9 @@ export const ContactForm = () => {
                                 </div>
 
 
-
-
-                                <button type="submit" className="btn btn--submit btn--lg" disabled={isSubmitting}>
+                                <motion.button whileTap={{ scale: 0.85 }} type="submit" className="btn btn--submit btn--lg" disabled={isSubmitting}>
                                     {isSubmitting ? 'submitting...' : 'submit'}
-                                </button>
+                                </motion.button>
                             </Form>
                         )}
                     </Formik>

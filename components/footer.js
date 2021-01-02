@@ -8,7 +8,7 @@ const StyledFooter = styled.footer`
 
     .footer{
         &__inner{
-            padding: 50px 0;
+            padding: 50px 0 75px 0;
             border-top: 2px solid ${props => props.theme.colors.blockGrey};
             margin: 0 auto;
         }
@@ -49,6 +49,14 @@ const StyledFooter = styled.footer`
                 }
             }
         }
+
+        &__copyright{
+            opacity: 0.3;
+            position: absolute;
+            bottom: 0;
+            right: 0;
+            padding: 0 70px;
+        }
     }
 `
 
@@ -59,7 +67,7 @@ export default function Footer() {
                 <div className="footer__inner">
                     <div className="footer__content">
                         <div>
-                            <h1>I'd love to chat.</h1>
+                            <h1 className="banner">I'd love to chat.</h1>
 
                             <div className="footer__contact-details">
                                 <a href="mailto:lukedaviesweb@gmail.com" className="footer__contact-detailsSection">
@@ -80,8 +88,11 @@ export default function Footer() {
                         <div className="footer__form-container">
                             <ContactForm />
                         </div>
-                    </div>
 
+                    </div>
+                    <div className="footer__copyright">
+                        <p className="label">copyright 2021 - Built By Luke</p>
+                    </div>
                 </div>
 
             </Container>

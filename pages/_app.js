@@ -2,10 +2,10 @@
 import { ThemeProvider } from 'styled-components'
 import { theme } from '../styles/theme'
 import { GlobalStyle } from '../styles/base'
+import { getSiteContent } from '../lib/api'
 
 
-
-function MyApp({ Component, pageProps }) {
+export default function MyApp({ Component, pageProps }) {
 
     return (
         <>
@@ -17,5 +17,3 @@ function MyApp({ Component, pageProps }) {
 
     )
 }
-
-export default MyApp

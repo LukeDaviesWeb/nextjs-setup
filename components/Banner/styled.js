@@ -14,12 +14,14 @@ h1{
     position: relative;
     z-index: 1;
 }
-span{
-    color: ${props => props.theme.colors.btnGrey};
-    font-size: ${props => props.theme.fontSizes.banner};
-}
+
+
 
 .banner{
+    &__alt-title{
+        color: ${props => props.theme.colors.btnGrey};
+    font-size: ${props => props.theme.fontSizes.banner};
+    }
     &__flex-row{
         display: flex;
         >div{
@@ -43,6 +45,12 @@ span{
         button{
             margin-right: 15px;
         }
+    }
+
+    &__subheader{
+        margin-top: 40px;
+        max-width: 40%;
+       
     }
 
 }

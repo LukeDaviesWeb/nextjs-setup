@@ -1,6 +1,6 @@
 import Link from 'next/link'
 import { useRouter } from 'next/router'
-
+import { motion } from 'framer-motion'
 const links =
 {
     '/': [
@@ -19,6 +19,18 @@ const links =
             link: '#contact'
         }
     ],
+    '/work': [
+        {
+            title: 'contact',
+            link: '#contact'
+        }
+    ],
+    '/experience': [
+        {
+            title: 'contact',
+            link: '#contact'
+        }
+    ],
     '/projects/[slug]': [
         {
             title: 'back to projects',
@@ -27,9 +39,8 @@ const links =
     ]
 }
 
-export const BannerCTA = () => {
-    const router = useRouter();
-    const currentRoute = router.pathname;
+export const BannerCTA = ({ currentRoute }) => {
+
 
     return (
         <div className="banner__cta-container">
@@ -39,8 +50,8 @@ export const BannerCTA = () => {
                     return (
                         <Link href={link.link} key={index}>
                             <a>
-                                <button className={index == 0 ? "btn btn--submit btn--sm" : "btn btn--sm"}>
-                                    {link.title}</button>
+                                <motion.button whileTap={{ scale: 0.85 }} className={index == 0 ? "btn btn--submit btn--sm" : "btn btn--sm"}>
+                                    {link.title}</motion.button>
                             </a>
                         </Link>
                     )

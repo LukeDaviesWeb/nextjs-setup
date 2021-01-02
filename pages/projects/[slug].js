@@ -42,7 +42,7 @@ export default function Project({ project, moreProjects, preview }) {
                 <br />
                 <p>next project:  {moreProjects[0].title}</p>
                 <Link href={`/projects/${moreProjects[0].slug}`}>
-                    <a>{moreProjects[0].title}</a>
+                    <a className="text-link">{moreProjects[0].title}</a>
                 </Link>
             </Container>
         </Layout>

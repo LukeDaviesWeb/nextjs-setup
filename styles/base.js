@@ -30,15 +30,49 @@ export const GlobalStyle = createGlobalStyle`
         margin: 0;
     }
 
-    h1{
+    
+    .massive{
+        font-size: ${props => theme.fontSizes.massive};
+    }
+    .banner{
         font-size: ${props => theme.fontSizes.banner};
         line-height: 40px;
+    }
+
+    h1, .h1{
+        font-size: ${props => theme.fontSizes.h1};
+    }
+    h2, .h2{
+        font-size: ${props => theme.fontSizes.h2};
+    }
+    h3, .h3{
+        font-size: ${props => theme.fontSizes.h3};
+    }
+
+    p{
+        font-size: ${props => theme.fontSizes.body};
+    }
+
+
+    .lead, span.lead{
+        font-size: ${props => theme.fontSizes.lead};
+        line-height: 2.2rem;
+    }
+
+    .small{
+        font-size: ${props => theme.fontSizes.small};
+    }
+
+    .label{
+        font-size: ${props => theme.fontSizes.label};
     }
 
     a{
         text-decoration: none;
         color: inherit;
+    }
 
+    a.text-link{
         &:hover{
             color: ${props => theme.colors.blue};
         }
@@ -51,6 +85,29 @@ export const GlobalStyle = createGlobalStyle`
             list-style-type: none;
             font-weight: 400;
         }
+    }
+
+    ul.bullet-list{
+        li{
+            padding-bottom: 10px;
+            position: relative;
+            padding-left: 19px;
+            &:before{
+                content:'';
+                background: ${props => theme.colors.blue};
+                height: 10px;
+                width: 10px;
+                border-radius: 50%;
+                display: block;
+                position: absolute;
+                left: 0;
+                top: 5px;
+            }
+        }
+    }
+
+    .mt-lg{
+        margin-top: 150px;
     }
 
     .btn{
@@ -84,6 +141,10 @@ export const GlobalStyle = createGlobalStyle`
                 background: ${props => theme.colors.white};
                 color: ${props => theme.colors.black};
             }
+        }
+
+        &:focus{
+            outline: none;
         }
     }
 
