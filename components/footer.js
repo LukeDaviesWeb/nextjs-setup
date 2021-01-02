@@ -23,7 +23,7 @@ const StyledFooter = styled.footer`
 
         &__form-container{
             background: ${props => props.theme.colors.blockGrey};
-            border-radius: 50px;
+            border-radius:30px;
             padding: 5px 25px;
         }
 

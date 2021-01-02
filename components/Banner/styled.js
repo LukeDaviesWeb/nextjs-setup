@@ -20,7 +20,7 @@ h1{
 .banner{
     &__alt-title{
         color: ${props => props.theme.colors.btnGrey};
-    font-size: ${props => props.theme.fontSizes.banner};
+        font-size: ${props => props.inner ? props.theme.fontSizes.banner : '6.8rem'};
     }
     &__flex-row{
         display: flex;

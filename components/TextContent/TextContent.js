@@ -35,7 +35,7 @@ export const TextContent = ({ position, icon, className, children }) => {
                     variants={variants}
                     transition={{ repeat: Infinity, ease: "easeOut", type: "tween", duration: 3, repeatType: "reverse" }}
                 >
-                    <TextContentIcon icon={icon} fill="rgba(7,7,11, 0.8)" />
+                    <TextContentIcon icon={icon} fill="rgba(7,7,11, 1)" />
                 </motion.div>
             )}
 

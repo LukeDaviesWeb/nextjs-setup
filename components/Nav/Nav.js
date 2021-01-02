@@ -27,8 +27,8 @@ const links = [
         url: '/projects'
     },
     {
-        name: 'Experience',
-        url: '/experience'
+        name: 'Articles',
+        url: '/articles'
     },
     {
         name: 'Contact',

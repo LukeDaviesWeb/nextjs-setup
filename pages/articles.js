@@ -6,20 +6,20 @@ import Layout from '../components/layout'
 
 import { getAllProjects } from '../lib/api'
 
-export default function Experience({ preview }) {
+export default function Articles({ preview }) {
 
     return (
         <>
             <Layout preview={preview}>
                 <Head>
-                    <title>Built By Luke | Experience</title>
+                    <title>Built By Luke | Articles</title>
                 </Head>
 
-                <Banner title="Experience By" inner={true} />
+                <Banner title="Articles By" inner={true} />
 
                 <Container>
                     <div>
-                        <h2>experience go here</h2>
+                        <h2>articles listed here</h2>
                     </div>
 
                 </Container>

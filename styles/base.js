@@ -70,6 +70,7 @@ export const GlobalStyle = createGlobalStyle`
     .lead, span.lead{
         font-size: ${props => theme.fontSizes.lead};
         line-height: 2.2rem;
+        font-weight: bold;
     }
 
     span.highlight{
